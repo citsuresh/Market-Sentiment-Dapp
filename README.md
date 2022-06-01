@@ -132,7 +132,7 @@ Contract is now deployed to mumbai testnet.
 1. In console enter `npx hardhat verify {contract address} --network mumbai`
 2. Now you can go to the URL provided and interact with your smart contract.
 (Aside: I learned at this point that the `public` modifier in Solidity makes a function or data visible on the blockchain. `public` allows me to access this app's functions/data on polygonscan. The `private` modifier is for funtions data that are used internally in the contract but not relevant or appropriate for public viewing. I also learned that the reason why we have to use `require(msg.sender == owner)` for certain functions is to prevent other people who interact with the contract through polygonscan from using them. I didn't understand this initially because I wasn't aware that the contract could be accessed through the blockchain itself.)
-3. Through [polygonscan mumbai](https://mumbai.polygonscan.com/) I created Tickers for BTC, ETH, and LINK and voted `true` for BTC and LINK and `false` for ETH.
+3. Through [polygonscan mumbai](https://mumbai.polygonscan.com/) I created Tickers for BTC, ETH, and BNB and voted `true` for BTC and BNB and `false` for ETH.
 
 ### Initialize React App
 1. From terminal, in root folder of app: `yarn` to initialize and `yarn start` to open app in browser.
@@ -256,7 +256,7 @@ useEffect(() => {
     if(isInitialized) {
       getRatio('BTC', setBtc);
       getRatio('ETH', setEth);
-      getRatio('LINK', setLink);
+      getRatio('BNB', setBNB);
     }
   }, [isInitialized])
 ```
@@ -266,15 +266,15 @@ useEffect(() => {
     if(isInitialized) {
       getRatio('BTC', setBtc);
       getRatio('ETH', setEth);
-      getRatio('LINK', setLink);
+      getRatio('BNB', setBNB);
 
       async function createLiveQuery() {
         let query = new Moralis.Query('Votes');
         let subscription = await query.subscribe();
         subscription.on('update', (object) => {
 
-          if(object.attributes.ticker === 'LINK'){
-            getRatio('LINK', setLink);
+          if(object.attributes.ticker === 'BNB'){
+            getRatio('BNB', setBNB);
           }else if(object.attributes.ticker === "ETH"){
             getRatio('ETH', setEth);
           }else if(object.attributes.ticker === 'BTC'){
