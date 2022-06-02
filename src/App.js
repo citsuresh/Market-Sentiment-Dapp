@@ -25,7 +25,7 @@ const App = () => {
   const {Moralis, isInitialized} = useMoralis();
 
   async function getRatio(tick, setPerc){
- 
+
     const Votes = Moralis.Object.extend("Votes");
     const query = new Moralis.Query(Votes);
     query.equalTo("ticker", tick);
@@ -41,7 +41,7 @@ useEffect(() => {
    if(isInitialized){
    getRatio("BTC", setBtc);
    getRatio("ETH", setEth);
-   getRatio("LINK", setBNB);
+   getRatio("BNB", setBNB);
  
  
  
