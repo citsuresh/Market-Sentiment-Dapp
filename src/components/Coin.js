@@ -20,7 +20,7 @@ function Coin({ perc, setPerc, token, image, setModalToken, setVisible }) {
  async function vote(upDown){
  
    let options = {
-     contractAddress: "0x8222c13bFfD16762fbee9d96b79b920A40256FA2",
+     contractAddress: "0x7F14565e434bD0f804d244192dE6c8e2ABb49FcF",
      functionName: "vote",
      abi: [
        {
