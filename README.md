@@ -1,6 +1,14 @@
 # Market Sentiment Dapp
 
+Here is the app
+https://market-sentiment-dapp-citsuresh.vercel.app/
+
 ![image](https://user-images.githubusercontent.com/1070895/171484076-646057aa-f7e7-4785-879a-092d9bb2913c.png)
+
+You need to have metamask installed in your browser and connect to Polygon Mumbai testnet. You also need to have some testnet MATIC tokens for voting.
+Refer here for more instuctions here
+https://moralis.io/mumbai-testnet-faucet-how-to-get-free-testnet-matic-tokens/
+
 
 This project is based on a video tutorial by [Moralis](https://www.youtube.com/watch?v=MI_Se26Sfmo)
 
