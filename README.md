@@ -1,4 +1,7 @@
 # Market Sentiment Dapp
+
+![image](https://user-images.githubusercontent.com/1070895/171484076-646057aa-f7e7-4785-879a-092d9bb2913c.png)
+
 This project is based on a video tutorial by [Moralis](https://www.youtube.com/watch?v=MI_Se26Sfmo)
 
 Contract for this app can be viewed [here](https://mumbai.polygonscan.com/address/0x8222c13bFfD16762fbee9d96b79b920A40256FA2)
