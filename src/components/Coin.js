@@ -60,11 +60,17 @@ function Coin({ perc, setPerc, token, image, setModalToken, setVisible }) {
    });
  
  }
+
+ async function OpenInfo()
+ {   
+  setModalToken(token)
+  setVisible(true);
+ }
  
  return (
    <>
      <div>
-       <div className="token">
+       <div className="token"  onClick={()=>{ OpenInfo(); }}>
         <img src={image} alt="logo" height="50px" />
         <br/>
          {token}
@@ -109,10 +115,7 @@ function Coin({ perc, setPerc, token, image, setModalToken, setVisible }) {
        </div>
        <div className="votes">
            <Button
-           onClick={()=>{
-             setModalToken(token)
-             setVisible(true);
-           }}
+           onClick={()=>{ OpenInfo(); }}
            text="INFO"
            theme="translucent"
            type="button"
