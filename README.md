@@ -9,6 +9,12 @@ You need to have metamask installed in your browser and connect to Polygon Mumba
 Refer here for more instuctions here
 https://moralis.io/mumbai-testnet-faucet-how-to-get-free-testnet-matic-tokens/
 
+or 
+
+[How to connect Polygon Mumbai Testnet to MetaMask](https://medium.com/stakingbits/how-to-connect-polygon-mumbai-testnet-to-metamask-fc3487a3871f)
+
+[Get Test MATIC Tokens](https://faucet.polygon.technology/)
+
 
 This project is based on a video tutorial by [Moralis](https://www.youtube.com/watch?v=MI_Se26Sfmo)
 
