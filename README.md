@@ -27,7 +27,7 @@ Contract for this app can be viewed [here](https://mumbai.polygonscan.com/addres
 - Hardhat
 - Moralis
 
-## Notes from video
+## Notes from video tutorial
 
 ### Setup
 1. Fork and clone [repo](https://github.com/IAmJaysWay/FirstDapp-Starter) 
